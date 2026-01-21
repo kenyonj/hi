@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Kenyon</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <script src="/static/app.js" defer></script>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+        <span class="theme-icon">🌙</span>
+    </div>
+
+    <main class="container">
+        <header class="hero">
+            <h1 class="typing-text" id="hero-text"></h1>
+            <p class="subtitle fade-in">Staff Software Engineer at <a href="https://github.com" target="_blank" class="highlight-link">GitHub</a></p>
+        </header>
+
+        <section class="terminal fade-in-delay" onclick="focusInput()">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">~/justin — type "help" to start</span>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-output" id="terminal-output"></div>
+                <form hx-post="/command" hx-target="#terminal-output" hx-swap="beforeend" hx-on::after-request="this.reset(); document.getElementById('terminal-output').scrollTop = document.getElementById('terminal-output').scrollHeight;">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <input type="text" name="command" id="cmd-input" class="terminal-input" autocomplete="off" spellcheck="false" autofocus>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="webring fade-in-delay-2">
+            <a href="http://hotlinewebring.club/justinkenyon/previous">« Previous</a>
+            <a href="http://hotlinewebring.club" class="webring-name">Hotline Webring</a>
+            <a href="http://hotlinewebring.club/justinkenyon/next">Next »</a>
+        </footer>
+    </main>
+</body>
+</html>

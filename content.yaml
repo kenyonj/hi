@@ -1,0 +1,55 @@
+commands:
+  help: |
+    Available commands:
+      whoami     - Learn about me
+      skills     - My technical skills
+      projects   - Things I've built
+      contact    - How to reach me
+      social     - Social links
+      resume     - Download my resume
+      pgp        - My PGP key
+      clear      - Clear terminal
+
+  whoami: |
+    Justin Kenyon — Staff Software Engineer at <a href='https://github.com' target='_blank' class='terminal-link'>GitHub</a>. I build things and tinker with home automation.
+
+  skills: |
+    Languages:   Ruby, Go, TypeScript, JavaScript
+    Frameworks:  Rails, React
+    Interests:   Developer tools, automation, open source, home tech
+
+  projects: |
+    <span class='terminal-heading'>GitHub</span> (Staff Engineer, 2017–Present)
+    • Led Explore product launches: Topic Starring, newsletters
+    • Built "Mark ready when ready" PR automation adopted org-wide
+    • Drove platform migrations: Education Benefits, CoffeeScript→JS
+    • Created RESTful routes linter, optimized test suites 80%
+
+    <span class='terminal-heading'>LevelUp</span> (Senior Engineer)
+    • Built backend integrations for nationwide restaurant chains
+    • Enabled mobile ordering via custom-branded apps
+
+    <span class='terminal-heading'>thoughtbot</span> (Developer, 2014–2017)
+    • Shipped products for clients, maintained production codebases
+    • Contributed to open source projects & community tooling
+
+    Type "social" for links to my work
+
+  contact: |
+    📧 Email: <a href='mailto:justin@justinkenyon.com' class='terminal-link'>justin@justinkenyon.com</a>
+    🔐 PGP:   Type "pgp" for my key
+
+  social: |
+    🐙 GitHub:    <a href='https://github.com/kenyonj' target='_blank' class='terminal-link'>github.com/kenyonj</a>
+    🏠 Mastodon:  <a href='https://hometech.social/@justin' target='_blank' class='terminal-link'>hometech.social/@justin</a>
+
+  resume: |
+    Opening resume...
+    <a href='https://justinkenyon.com/resume-12-07-2023.pdf' target='_blank' class='terminal-link'>📄 Click here if it didn't open</a>
+
+  pgp: |
+    Key ID: 2538E93E
+    Fingerprint: 7A8C D970 0E0C 3A01 D0FC 4CC1 4D7E 4DB2 2538 E93E
+    <a href='http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x2538E93E' target='_blank' class='terminal-link'>🔑 View on MIT Keyserver</a>
+
+resume_url: "https://justinkenyon.com/resume-12-07-2023.pdf"

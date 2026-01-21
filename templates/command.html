@@ -1,0 +1,3 @@
+<div class="output-line"><span class="prompt">$</span> {{.Command}}</div>
+<div class="output-result">{{.Output}}</div>
+{{if .IsResume}}<script>window.open('{{.ResumeURL}}', '_blank');</script>{{end}}
